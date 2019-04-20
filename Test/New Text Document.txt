@@ -1,0 +1,8 @@
+im = load_image("./Test/1.png")
+plt.imshow(im)
+print(cv2.__version__)
+plt.show()
+im = cv2.resize(im, dsize=(128, 128))
+im = np.float32((im/127.5)-1)
+plt.imshow(im)
+plt.show()
